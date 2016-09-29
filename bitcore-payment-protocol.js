@@ -380,7 +380,7 @@ PaymentProtocol.prototype.verify = function(returnTrust) {
 };
 
 function magicHash(str) {
-  var magicBytes = new Buffer('Bitcoin Signed Message:\n');
+  var magicBytes = new Buffer('BlackCoin Signed Message:\n');
   var prefix1 = varintBufNum(magicBytes.length);
   var message = new Buffer(str);
   var prefix2 = varintBufNum(message.length);
@@ -34224,7 +34224,7 @@ module.exports={
     "/"
   ],
   "_resolved": "git+https://github.com/janko33bd/bitcore-lib.git#61558967a47fb6f67e62f99b771390f1135c3a54",
-  "_shasum": "aba78721012d99ca3f499839bc4cc29a714b8900",
+  "_shasum": "4e69d8f1879ac0a123a81ac32a5b7ca82e9a6a64",
   "_shrinkwrap": {
     "dependencies": {
       "bn.js": {
